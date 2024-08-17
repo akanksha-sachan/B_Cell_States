@@ -17,6 +17,5 @@ barcodes = pd.read_csv(data_dir + "barcodes.tsv.gz", sep="\t", header=None)
 #print(features.head())
 print(features[2].unique())
 
-#select the Peaks rows and print their head
-peaks = features[features[2] == "Peaks"]
-print(peaks.head())
+#check all columns in the features
+print(features[0].unique())
