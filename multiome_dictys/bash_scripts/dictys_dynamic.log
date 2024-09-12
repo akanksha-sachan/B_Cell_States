@@ -1,0 +1,780 @@
+
+CommandNotFoundError: Your shell has not been properly configured to use 'conda deactivate'.
+To initialize your shell, run
+
+    $ conda init <SHELL_NAME>
+
+Currently supported shells are:
+  - bash
+  - fish
+  - tcsh
+  - xonsh
+  - zsh
+  - powershell
+
+See 'conda init --help' for more information and options.
+
+IMPORTANT: You may need to close and restart your shell after running 'conda init'.
+
+
+mkdir -p tmp_dynamic
+if ! [ -e tmp_dynamic/subsets.txt ] || ! [ -e tmp_dynamic/subset_locs.h5 ] || ! [ -e tmp_dynamic/subset_edges.tsv.gz ]; then OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  dynamic subsets_rna data/traj_node.h5 data/traj_cell_rna.h5 data/coord_rna.tsv.gz tmp_dynamic/subsets.txt tmp_dynamic/subset_locs.h5 tmp_dynamic tmp_dynamic/subset_edges.tsv.gz 3000 2625 0.05; fi
+cp tmp_dynamic/Subset1/names_rna.txt tmp_dynamic/Subset1/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset1/names_rna.txt tmp_dynamic/Subset1/expression0.tsv.gz
+cp tmp_dynamic/Subset2/names_rna.txt tmp_dynamic/Subset2/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset2/names_rna.txt tmp_dynamic/Subset2/expression0.tsv.gz
+cp tmp_dynamic/Subset3/names_rna.txt tmp_dynamic/Subset3/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset3/names_rna.txt tmp_dynamic/Subset3/expression0.tsv.gz
+cp tmp_dynamic/Subset4/names_rna.txt tmp_dynamic/Subset4/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset4/names_rna.txt tmp_dynamic/Subset4/expression0.tsv.gz
+cp tmp_dynamic/Subset5/names_rna.txt tmp_dynamic/Subset5/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset5/names_rna.txt tmp_dynamic/Subset5/expression0.tsv.gz
+cp tmp_dynamic/Subset6/names_rna.txt tmp_dynamic/Subset6/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset6/names_rna.txt tmp_dynamic/Subset6/expression0.tsv.gz
+cp tmp_dynamic/Subset7/names_rna.txt tmp_dynamic/Subset7/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset7/names_rna.txt tmp_dynamic/Subset7/expression0.tsv.gz
+cp tmp_dynamic/Subset8/names_rna.txt tmp_dynamic/Subset8/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset8/names_rna.txt tmp_dynamic/Subset8/expression0.tsv.gz
+cp tmp_dynamic/Subset9/names_rna.txt tmp_dynamic/Subset9/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset9/names_rna.txt tmp_dynamic/Subset9/expression0.tsv.gz
+cp tmp_dynamic/Subset10/names_rna.txt tmp_dynamic/Subset10/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset10/names_rna.txt tmp_dynamic/Subset10/expression0.tsv.gz
+cp tmp_dynamic/Subset11/names_rna.txt tmp_dynamic/Subset11/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset11/names_rna.txt tmp_dynamic/Subset11/expression0.tsv.gz
+cp tmp_dynamic/Subset12/names_rna.txt tmp_dynamic/Subset12/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset12/names_rna.txt tmp_dynamic/Subset12/expression0.tsv.gz
+cp tmp_dynamic/Subset13/names_rna.txt tmp_dynamic/Subset13/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset13/names_rna.txt tmp_dynamic/Subset13/expression0.tsv.gz
+cp tmp_dynamic/Subset14/names_rna.txt tmp_dynamic/Subset14/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset14/names_rna.txt tmp_dynamic/Subset14/expression0.tsv.gz
+cp tmp_dynamic/Subset15/names_rna.txt tmp_dynamic/Subset15/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset15/names_rna.txt tmp_dynamic/Subset15/expression0.tsv.gz
+cp tmp_dynamic/Subset16/names_rna.txt tmp_dynamic/Subset16/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset16/names_rna.txt tmp_dynamic/Subset16/expression0.tsv.gz
+cp tmp_dynamic/Subset17/names_rna.txt tmp_dynamic/Subset17/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset17/names_rna.txt tmp_dynamic/Subset17/expression0.tsv.gz
+cp tmp_dynamic/Subset18/names_rna.txt tmp_dynamic/Subset18/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset18/names_rna.txt tmp_dynamic/Subset18/expression0.tsv.gz
+cp tmp_dynamic/Subset19/names_rna.txt tmp_dynamic/Subset19/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset19/names_rna.txt tmp_dynamic/Subset19/expression0.tsv.gz
+cp tmp_dynamic/Subset20/names_rna.txt tmp_dynamic/Subset20/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset20/names_rna.txt tmp_dynamic/Subset20/expression0.tsv.gz
+cp tmp_dynamic/Subset21/names_rna.txt tmp_dynamic/Subset21/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset21/names_rna.txt tmp_dynamic/Subset21/expression0.tsv.gz
+cp tmp_dynamic/Subset22/names_rna.txt tmp_dynamic/Subset22/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset22/names_rna.txt tmp_dynamic/Subset22/expression0.tsv.gz
+cp tmp_dynamic/Subset23/names_rna.txt tmp_dynamic/Subset23/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset23/names_rna.txt tmp_dynamic/Subset23/expression0.tsv.gz
+cp tmp_dynamic/Subset24/names_rna.txt tmp_dynamic/Subset24/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset24/names_rna.txt tmp_dynamic/Subset24/expression0.tsv.gz
+cp tmp_dynamic/Subset25/names_rna.txt tmp_dynamic/Subset25/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset25/names_rna.txt tmp_dynamic/Subset25/expression0.tsv.gz
+cp tmp_dynamic/Subset26/names_rna.txt tmp_dynamic/Subset26/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset26/names_rna.txt tmp_dynamic/Subset26/expression0.tsv.gz
+cp tmp_dynamic/Subset27/names_rna.txt tmp_dynamic/Subset27/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset27/names_rna.txt tmp_dynamic/Subset27/expression0.tsv.gz
+cp tmp_dynamic/Subset28/names_rna.txt tmp_dynamic/Subset28/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset28/names_rna.txt tmp_dynamic/Subset28/expression0.tsv.gz
+cp tmp_dynamic/Subset29/names_rna.txt tmp_dynamic/Subset29/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset29/names_rna.txt tmp_dynamic/Subset29/expression0.tsv.gz
+cp tmp_dynamic/Subset30/names_rna.txt tmp_dynamic/Subset30/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset30/names_rna.txt tmp_dynamic/Subset30/expression0.tsv.gz
+cp tmp_dynamic/Subset31/names_rna.txt tmp_dynamic/Subset31/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset31/names_rna.txt tmp_dynamic/Subset31/expression0.tsv.gz
+cp tmp_dynamic/Subset32/names_rna.txt tmp_dynamic/Subset32/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset32/names_rna.txt tmp_dynamic/Subset32/expression0.tsv.gz
+cp tmp_dynamic/Subset33/names_rna.txt tmp_dynamic/Subset33/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset33/names_rna.txt tmp_dynamic/Subset33/expression0.tsv.gz
+cp tmp_dynamic/Subset34/names_rna.txt tmp_dynamic/Subset34/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset34/names_rna.txt tmp_dynamic/Subset34/expression0.tsv.gz
+cp tmp_dynamic/Subset35/names_rna.txt tmp_dynamic/Subset35/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset35/names_rna.txt tmp_dynamic/Subset35/expression0.tsv.gz
+cp tmp_dynamic/Subset36/names_rna.txt tmp_dynamic/Subset36/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset36/names_rna.txt tmp_dynamic/Subset36/expression0.tsv.gz
+cp tmp_dynamic/Subset37/names_rna.txt tmp_dynamic/Subset37/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset37/names_rna.txt tmp_dynamic/Subset37/expression0.tsv.gz
+cp tmp_dynamic/Subset38/names_rna.txt tmp_dynamic/Subset38/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset38/names_rna.txt tmp_dynamic/Subset38/expression0.tsv.gz
+cp tmp_dynamic/Subset39/names_rna.txt tmp_dynamic/Subset39/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset39/names_rna.txt tmp_dynamic/Subset39/expression0.tsv.gz
+cp tmp_dynamic/Subset40/names_rna.txt tmp_dynamic/Subset40/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset40/names_rna.txt tmp_dynamic/Subset40/expression0.tsv.gz
+cp tmp_dynamic/Subset41/names_rna.txt tmp_dynamic/Subset41/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset41/names_rna.txt tmp_dynamic/Subset41/expression0.tsv.gz
+cp tmp_dynamic/Subset42/names_rna.txt tmp_dynamic/Subset42/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset42/names_rna.txt tmp_dynamic/Subset42/expression0.tsv.gz
+cp tmp_dynamic/Subset43/names_rna.txt tmp_dynamic/Subset43/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset43/names_rna.txt tmp_dynamic/Subset43/expression0.tsv.gz
+cp tmp_dynamic/Subset44/names_rna.txt tmp_dynamic/Subset44/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset44/names_rna.txt tmp_dynamic/Subset44/expression0.tsv.gz
+cp tmp_dynamic/Subset45/names_rna.txt tmp_dynamic/Subset45/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset45/names_rna.txt tmp_dynamic/Subset45/expression0.tsv.gz
+cp tmp_dynamic/Subset46/names_rna.txt tmp_dynamic/Subset46/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset46/names_rna.txt tmp_dynamic/Subset46/expression0.tsv.gz
+cp tmp_dynamic/Subset47/names_rna.txt tmp_dynamic/Subset47/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset47/names_rna.txt tmp_dynamic/Subset47/expression0.tsv.gz
+cp tmp_dynamic/Subset48/names_rna.txt tmp_dynamic/Subset48/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset48/names_rna.txt tmp_dynamic/Subset48/expression0.tsv.gz
+cp tmp_dynamic/Subset49/names_rna.txt tmp_dynamic/Subset49/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset49/names_rna.txt tmp_dynamic/Subset49/expression0.tsv.gz
+cp tmp_dynamic/Subset50/names_rna.txt tmp_dynamic/Subset50/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset50/names_rna.txt tmp_dynamic/Subset50/expression0.tsv.gz
+cp tmp_dynamic/Subset51/names_rna.txt tmp_dynamic/Subset51/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset51/names_rna.txt tmp_dynamic/Subset51/expression0.tsv.gz
+cp tmp_dynamic/Subset52/names_rna.txt tmp_dynamic/Subset52/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset52/names_rna.txt tmp_dynamic/Subset52/expression0.tsv.gz
+cp tmp_dynamic/Subset53/names_rna.txt tmp_dynamic/Subset53/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset53/names_rna.txt tmp_dynamic/Subset53/expression0.tsv.gz
+cp tmp_dynamic/Subset54/names_rna.txt tmp_dynamic/Subset54/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset54/names_rna.txt tmp_dynamic/Subset54/expression0.tsv.gz
+cp tmp_dynamic/Subset55/names_rna.txt tmp_dynamic/Subset55/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset55/names_rna.txt tmp_dynamic/Subset55/expression0.tsv.gz
+cp tmp_dynamic/Subset56/names_rna.txt tmp_dynamic/Subset56/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset56/names_rna.txt tmp_dynamic/Subset56/expression0.tsv.gz
+cp tmp_dynamic/Subset57/names_rna.txt tmp_dynamic/Subset57/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset57/names_rna.txt tmp_dynamic/Subset57/expression0.tsv.gz
+cp tmp_dynamic/Subset58/names_rna.txt tmp_dynamic/Subset58/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset58/names_rna.txt tmp_dynamic/Subset58/expression0.tsv.gz
+cp tmp_dynamic/Subset59/names_rna.txt tmp_dynamic/Subset59/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset59/names_rna.txt tmp_dynamic/Subset59/expression0.tsv.gz
+cp tmp_dynamic/Subset60/names_rna.txt tmp_dynamic/Subset60/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset60/names_rna.txt tmp_dynamic/Subset60/expression0.tsv.gz
+cp tmp_dynamic/Subset61/names_rna.txt tmp_dynamic/Subset61/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset61/names_rna.txt tmp_dynamic/Subset61/expression0.tsv.gz
+cp tmp_dynamic/Subset62/names_rna.txt tmp_dynamic/Subset62/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset62/names_rna.txt tmp_dynamic/Subset62/expression0.tsv.gz
+cp tmp_dynamic/Subset63/names_rna.txt tmp_dynamic/Subset63/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset63/names_rna.txt tmp_dynamic/Subset63/expression0.tsv.gz
+cp tmp_dynamic/Subset64/names_rna.txt tmp_dynamic/Subset64/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset64/names_rna.txt tmp_dynamic/Subset64/expression0.tsv.gz
+cp tmp_dynamic/Subset65/names_rna.txt tmp_dynamic/Subset65/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset65/names_rna.txt tmp_dynamic/Subset65/expression0.tsv.gz
+cp tmp_dynamic/Subset66/names_rna.txt tmp_dynamic/Subset66/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset66/names_rna.txt tmp_dynamic/Subset66/expression0.tsv.gz
+cp tmp_dynamic/Subset67/names_rna.txt tmp_dynamic/Subset67/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset67/names_rna.txt tmp_dynamic/Subset67/expression0.tsv.gz
+cp tmp_dynamic/Subset68/names_rna.txt tmp_dynamic/Subset68/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset68/names_rna.txt tmp_dynamic/Subset68/expression0.tsv.gz
+cp tmp_dynamic/Subset69/names_rna.txt tmp_dynamic/Subset69/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset69/names_rna.txt tmp_dynamic/Subset69/expression0.tsv.gz
+cp tmp_dynamic/Subset70/names_rna.txt tmp_dynamic/Subset70/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset70/names_rna.txt tmp_dynamic/Subset70/expression0.tsv.gz
+cp tmp_dynamic/Subset71/names_rna.txt tmp_dynamic/Subset71/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset71/names_rna.txt tmp_dynamic/Subset71/expression0.tsv.gz
+cp tmp_dynamic/Subset72/names_rna.txt tmp_dynamic/Subset72/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset72/names_rna.txt tmp_dynamic/Subset72/expression0.tsv.gz
+cp tmp_dynamic/Subset73/names_rna.txt tmp_dynamic/Subset73/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset73/names_rna.txt tmp_dynamic/Subset73/expression0.tsv.gz
+cp tmp_dynamic/Subset74/names_rna.txt tmp_dynamic/Subset74/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset74/names_rna.txt tmp_dynamic/Subset74/expression0.tsv.gz
+cp tmp_dynamic/Subset75/names_rna.txt tmp_dynamic/Subset75/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset75/names_rna.txt tmp_dynamic/Subset75/expression0.tsv.gz
+cp tmp_dynamic/Subset76/names_rna.txt tmp_dynamic/Subset76/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset76/names_rna.txt tmp_dynamic/Subset76/expression0.tsv.gz
+cp tmp_dynamic/Subset77/names_rna.txt tmp_dynamic/Subset77/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset77/names_rna.txt tmp_dynamic/Subset77/expression0.tsv.gz
+cp tmp_dynamic/Subset78/names_rna.txt tmp_dynamic/Subset78/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset78/names_rna.txt tmp_dynamic/Subset78/expression0.tsv.gz
+cp tmp_dynamic/Subset79/names_rna.txt tmp_dynamic/Subset79/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset79/names_rna.txt tmp_dynamic/Subset79/expression0.tsv.gz
+cp tmp_dynamic/Subset80/names_rna.txt tmp_dynamic/Subset80/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset80/names_rna.txt tmp_dynamic/Subset80/expression0.tsv.gz
+cp tmp_dynamic/Subset81/names_rna.txt tmp_dynamic/Subset81/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset81/names_rna.txt tmp_dynamic/Subset81/expression0.tsv.gz
+cp tmp_dynamic/Subset82/names_rna.txt tmp_dynamic/Subset82/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset82/names_rna.txt tmp_dynamic/Subset82/expression0.tsv.gz
+cp tmp_dynamic/Subset83/names_rna.txt tmp_dynamic/Subset83/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset83/names_rna.txt tmp_dynamic/Subset83/expression0.tsv.gz
+cp tmp_dynamic/Subset84/names_rna.txt tmp_dynamic/Subset84/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset84/names_rna.txt tmp_dynamic/Subset84/expression0.tsv.gz
+cp tmp_dynamic/Subset85/names_rna.txt tmp_dynamic/Subset85/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset85/names_rna.txt tmp_dynamic/Subset85/expression0.tsv.gz
+cp tmp_dynamic/Subset86/names_rna.txt tmp_dynamic/Subset86/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset86/names_rna.txt tmp_dynamic/Subset86/expression0.tsv.gz
+cp tmp_dynamic/Subset87/names_rna.txt tmp_dynamic/Subset87/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset87/names_rna.txt tmp_dynamic/Subset87/expression0.tsv.gz
+cp tmp_dynamic/Subset88/names_rna.txt tmp_dynamic/Subset88/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset88/names_rna.txt tmp_dynamic/Subset88/expression0.tsv.gz
+cp tmp_dynamic/Subset89/names_rna.txt tmp_dynamic/Subset89/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset89/names_rna.txt tmp_dynamic/Subset89/expression0.tsv.gz
+cp tmp_dynamic/Subset90/names_rna.txt tmp_dynamic/Subset90/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset90/names_rna.txt tmp_dynamic/Subset90/expression0.tsv.gz
+cp tmp_dynamic/Subset91/names_rna.txt tmp_dynamic/Subset91/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset91/names_rna.txt tmp_dynamic/Subset91/expression0.tsv.gz
+cp tmp_dynamic/Subset92/names_rna.txt tmp_dynamic/Subset92/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset92/names_rna.txt tmp_dynamic/Subset92/expression0.tsv.gz
+cp tmp_dynamic/Subset93/names_rna.txt tmp_dynamic/Subset93/names_atac0.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset93/names_rna.txt tmp_dynamic/Subset93/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc qc_reads  tmp_dynamic/Subset90/expression0.tsv.gz tmp_dynamic/Subset90/expression.tsv.gz 10 10 0 0 0 0
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc qc_reads  tmp_dynamic/Subset93/expression0.tsv.gz tmp_dynamic/Subset93/expression.tsv.gz 10 10 0 0 0 0
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc qc_reads  tmp_dynamic/Subset92/expression0.tsv.gz tmp_dynamic/Subset92/expression.tsv.gz 10 10 0 0 0 0
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_atac  tmp_dynamic/Subset93/expression.tsv.gz tmp_dynamic/Subset93/names_atac0.txt tmp_dynamic/Subset93/names_atac.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_atac  tmp_dynamic/Subset92/expression.tsv.gz tmp_dynamic/Subset92/names_atac0.txt tmp_dynamic/Subset92/names_atac.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_atac  tmp_dynamic/Subset90/expression.tsv.gz tmp_dynamic/Subset90/names_atac0.txt tmp_dynamic/Subset90/names_atac.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  chromatin macs2 --nth 4 tmp_dynamic/Subset93/names_atac.txt data/bams tmp_dynamic/Subset93/reads.bam tmp_dynamic/Subset93/reads.bai tmp_dynamic/Subset93/peaks.bed hs
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  chromatin macs2 --nth 4 tmp_dynamic/Subset92/names_atac.txt data/bams tmp_dynamic/Subset92/reads.bam tmp_dynamic/Subset92/reads.bai tmp_dynamic/Subset92/peaks.bed hs
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  chromatin macs2 --nth 4 tmp_dynamic/Subset90/names_atac.txt data/bams tmp_dynamic/Subset90/reads.bam tmp_dynamic/Subset90/reads.bai tmp_dynamic/Subset90/peaks.bed hs
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset10/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset8/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset1/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset6/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset3/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset7/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset9/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset2/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset5/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset4/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset13/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset11/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset12/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset14/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset15/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset16/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset17/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset18/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset19/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset20/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset21/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset22/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset23/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset24/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset25/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset26/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset27/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset28/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset29/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset30/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset31/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset32/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset33/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset34/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset35/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset36/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset37/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset38/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset39/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset40/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset41/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset43/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset42/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset44/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset45/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset46/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset47/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset48/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset49/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset50/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset51/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset52/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset53/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset55/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset54/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset56/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset57/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset58/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset59/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset60/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset61/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset63/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset62/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset65/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset64/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset67/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset66/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset68/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset69/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset70/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset71/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset72/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset73/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset74/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset75/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset77/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset76/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset79/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset78/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset80/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset82/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset81/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset83/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset84/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset85/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset86/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset87/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset88/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset89/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset91/expression0.tsv.gz] Killed
+Traceback (most recent call last):
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/dictys/__main__.py", line 13, in <module>
+    docstringrunner(__package__)
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/docstring2argparse/__init__.py", line 340, in d[bam_sort_core] merging from 16 files and 4 in-memory blocks...
+Traceback (most recent call last):
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/bin/macs2", line 653, in <module>
+    main()
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/bin/macs2", line 49, in main
+    from MACS2.callpeak_cmd import run
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/MACS2/callpeak_cmd.py", line 23, in <module>
+    from MACS2.OptValidator import opt_validate
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/MACS2/OptValidator.py", line 20, in <module>
+    from MACS2.IO.Parser import BEDParser, ELANDResultParser, ELANDMultiParser, \
+  File "__init__.pxd", line 206, in init MACS2.IO.Parser
+ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+
+[bam_sort_core] merging from 16 files and 4 in-memory blocks...
+Traceback (most recent call last):
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/bin/macs2", line 653, in <module>
+    main()
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/bin/macs2", line 49, in main
+    from MACS2.callpeak_cmd import run
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/MACS2/callpeak_cmd.py", line 23, in <module>
+    from MACS2.OptValidator import opt_validate
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/MACS2/OptValidator.py", line 20, in <module>
+    from MACS2.IO.Parser import BEDParser, ELANDResultParser, ELANDMultiParser, \
+  File "__init__.pxd", line 206, in init MACS2.IO.Parser
+ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+
+[bam_sort_core] merging from 16 files and 4 in-memory blocks...
+Traceback (most recent call last):
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/bin/macs2", line 653, in <module>
+    main()
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/bin/macs2", line 49, in main
+    from MACS2.callpeak_cmd import run
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/MACS2/callpeak_cmd.py", line 23, in <module>
+    from MACS2.OptValidator import opt_validate
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/MACS2/OptValidator.py", line 20, in <module>
+    from MACS2.IO.Parser import BEDParser, ELANDResultParser, ELANDMultiParser, \
+  File "__init__.pxd", line 206, in init MACS2.IO.Parser
+ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+
+ocstringrunner
+    run_args(pkgname,funcs,args)
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/docstring2argparse/__init__.py", line 330, in run_args
+    return func(*a,**ka)
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/dictys/chromatin.py", line 67, in macs2
+    d2 = shell.cmdfile(cmd,[],infiles={'cellnames.txt': namestxt},quiet=False,cd=True)
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/dictys/utils/shell.py", line 181, in cmdfile
+    raise RuntimeError('Command failed, possibly due to program error: ' + cmda)
+RuntimeError: Command failed, possibly due to program error: /ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/dictys/scripts/chromatin_macs2.sh cellnames.txt /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/data/bams /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset90/reads.bam /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset90/reads.bai /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset90/peaks.bed hs 0.05 4
+make: *** [makefiles/common.mk:138: tmp_dynamic/Subset90/reads.bam] Error 1
+Traceback (most recent call last):
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/dictys/__main__.py", line 13, in <module>
+    docstringrunner(__package__)
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/docstring2argparse/__init__.py", line 340, in docstringrunner
+    run_args(pkgname,funcs,args)
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/docstring2argparse/__init__.py", line 330, in run_args
+    return func(*a,**ka)
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/dictys/chromatin.py", line 67, in macs2
+    d2 = shell.cmdfile(cmd,[],infiles={'cellnames.txt': namestxt},quiet=False,cd=True)
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/dictys/utils/shell.py", line 181, in cmdfile
+    raise RuntimeError('Command failed, possibly due to program error: ' + cmda)
+RuntimeError: Command failed, possibly due to program error: /ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/dictys/scripts/chromatin_macs2.sh cellnames.txt /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/data/bams /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset92/reads.bam /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset92/reads.bai /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset92/peaks.bed hs 0.05 4
+make: *** [makefiles/common.mk:138: tmp_dynamic/Subset92/reads.bam] Error 1
+Traceback (most recent call last):
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/dictys/__main__.py", line 13, in <module>
+    docstringrunner(__package__)
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/docstring2argparse/__init__.py", line 340, in docstringrunner
+    run_args(pkgname,funcs,args)
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/docstring2argparse/__init__.py", line 330, in run_args
+    return func(*a,**ka)
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/dictys/chromatin.py", line 67, in macs2
+    d2 = shell.cmdfile(cmd,[],infiles={'cellnames.txt': namestxt},quiet=False,cd=True)
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/dictys/utils/shell.py", line 181, in cmdfile
+    raise RuntimeError('Command failed, possibly due to program error: ' + cmda)
+RuntimeError: Command failed, possibly due to program error: /ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/dictys/scripts/chromatin_macs2.sh cellnames.txt /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/data/bams /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset93/reads.bam /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset93/reads.bai /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset93/peaks.bed hs 0.05 4
+make: *** [makefiles/common.mk:138: tmp_dynamic/Subset93/reads.bam] Error 1
+make: Target 'cpu' not remade because of errors.
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset1/names_rna.txt tmp_dynamic/Subset1/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset2/names_rna.txt tmp_dynamic/Subset2/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset3/names_rna.txt tmp_dynamic/Subset3/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset4/names_rna.txt tmp_dynamic/Subset4/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset5/names_rna.txt tmp_dynamic/Subset5/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset6/names_rna.txt tmp_dynamic/Subset6/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset7/names_rna.txt tmp_dynamic/Subset7/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset8/names_rna.txt tmp_dynamic/Subset8/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset9/names_rna.txt tmp_dynamic/Subset9/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset10/names_rna.txt tmp_dynamic/Subset10/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset11/names_rna.txt tmp_dynamic/Subset11/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset12/names_rna.txt tmp_dynamic/Subset12/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset13/names_rna.txt tmp_dynamic/Subset13/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset14/names_rna.txt tmp_dynamic/Subset14/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset15/names_rna.txt tmp_dynamic/Subset15/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset16/names_rna.txt tmp_dynamic/Subset16/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset17/names_rna.txt tmp_dynamic/Subset17/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset18/names_rna.txt tmp_dynamic/Subset18/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset19/names_rna.txt tmp_dynamic/Subset19/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset20/names_rna.txt tmp_dynamic/Subset20/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset21/names_rna.txt tmp_dynamic/Subset21/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset22/names_rna.txt tmp_dynamic/Subset22/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset23/names_rna.txt tmp_dynamic/Subset23/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset24/names_rna.txt tmp_dynamic/Subset24/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset25/names_rna.txt tmp_dynamic/Subset25/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset26/names_rna.txt tmp_dynamic/Subset26/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset27/names_rna.txt tmp_dynamic/Subset27/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset28/names_rna.txt tmp_dynamic/Subset28/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset29/names_rna.txt tmp_dynamic/Subset29/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset30/names_rna.txt tmp_dynamic/Subset30/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset31/names_rna.txt tmp_dynamic/Subset31/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset32/names_rna.txt tmp_dynamic/Subset32/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset33/names_rna.txt tmp_dynamic/Subset33/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset34/names_rna.txt tmp_dynamic/Subset34/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset35/names_rna.txt tmp_dynamic/Subset35/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset36/names_rna.txt tmp_dynamic/Subset36/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset37/names_rna.txt tmp_dynamic/Subset37/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset38/names_rna.txt tmp_dynamic/Subset38/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset39/names_rna.txt tmp_dynamic/Subset39/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset40/names_rna.txt tmp_dynamic/Subset40/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset41/names_rna.txt tmp_dynamic/Subset41/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset42/names_rna.txt tmp_dynamic/Subset42/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset43/names_rna.txt tmp_dynamic/Subset43/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset44/names_rna.txt tmp_dynamic/Subset44/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset45/names_rna.txt tmp_dynamic/Subset45/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset46/names_rna.txt tmp_dynamic/Subset46/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset47/names_rna.txt tmp_dynamic/Subset47/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset48/names_rna.txt tmp_dynamic/Subset48/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset49/names_rna.txt tmp_dynamic/Subset49/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset50/names_rna.txt tmp_dynamic/Subset50/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset51/names_rna.txt tmp_dynamic/Subset51/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset52/names_rna.txt tmp_dynamic/Subset52/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset53/names_rna.txt tmp_dynamic/Subset53/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset54/names_rna.txt tmp_dynamic/Subset54/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset55/names_rna.txt tmp_dynamic/Subset55/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset56/names_rna.txt tmp_dynamic/Subset56/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset57/names_rna.txt tmp_dynamic/Subset57/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset58/names_rna.txt tmp_dynamic/Subset58/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset59/names_rna.txt tmp_dynamic/Subset59/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset60/names_rna.txt tmp_dynamic/Subset60/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset61/names_rna.txt tmp_dynamic/Subset61/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset62/names_rna.txt tmp_dynamic/Subset62/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset63/names_rna.txt tmp_dynamic/Subset63/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset64/names_rna.txt tmp_dynamic/Subset64/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset65/names_rna.txt tmp_dynamic/Subset65/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset66/names_rna.txt tmp_dynamic/Subset66/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset67/names_rna.txt tmp_dynamic/Subset67/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset68/names_rna.txt tmp_dynamic/Subset68/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset69/names_rna.txt tmp_dynamic/Subset69/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset70/names_rna.txt tmp_dynamic/Subset70/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset71/names_rna.txt tmp_dynamic/Subset71/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset72/names_rna.txt tmp_dynamic/Subset72/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset73/names_rna.txt tmp_dynamic/Subset73/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset74/names_rna.txt tmp_dynamic/Subset74/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset75/names_rna.txt tmp_dynamic/Subset75/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset76/names_rna.txt tmp_dynamic/Subset76/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset77/names_rna.txt tmp_dynamic/Subset77/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset78/names_rna.txt tmp_dynamic/Subset78/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset79/names_rna.txt tmp_dynamic/Subset79/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset80/names_rna.txt tmp_dynamic/Subset80/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset81/names_rna.txt tmp_dynamic/Subset81/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset82/names_rna.txt tmp_dynamic/Subset82/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset83/names_rna.txt tmp_dynamic/Subset83/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset84/names_rna.txt tmp_dynamic/Subset84/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset85/names_rna.txt tmp_dynamic/Subset85/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset86/names_rna.txt tmp_dynamic/Subset86/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset87/names_rna.txt tmp_dynamic/Subset87/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset88/names_rna.txt tmp_dynamic/Subset88/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset89/names_rna.txt tmp_dynamic/Subset89/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  chromatin macs2 --nth 4 tmp_dynamic/Subset90/names_atac.txt data/bams tmp_dynamic/Subset90/reads.bam tmp_dynamic/Subset90/reads.bai tmp_dynamic/Subset90/peaks.bed hs
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset91/names_rna.txt tmp_dynamic/Subset91/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  chromatin macs2 --nth 4 tmp_dynamic/Subset92/names_atac.txt data/bams tmp_dynamic/Subset92/reads.bam tmp_dynamic/Subset92/reads.bai tmp_dynamic/Subset92/peaks.bed hs
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  chromatin macs2 --nth 4 tmp_dynamic/Subset93/names_atac.txt data/bams tmp_dynamic/Subset93/reads.bam tmp_dynamic/Subset93/reads.bai tmp_dynamic/Subset93/peaks.bed hs
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc qc_reads  tmp_dynamic/Subset88/expression0.tsv.gz tmp_dynamic/Subset88/expression.tsv.gz 10 10 0 0 0 0
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc qc_reads  tmp_dynamic/Subset89/expression0.tsv.gz tmp_dynamic/Subset89/expression.tsv.gz 10 10 0 0 0 0
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc qc_reads  tmp_dynamic/Subset91/expression0.tsv.gz tmp_dynamic/Subset91/expression.tsv.gz 10 10 0 0 0 0
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_atac  tmp_dynamic/Subset91/expression.tsv.gz tmp_dynamic/Subset91/names_atac0.txt tmp_dynamic/Subset91/names_atac.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_atac  tmp_dynamic/Subset88/expression.tsv.gz tmp_dynamic/Subset88/names_atac0.txt tmp_dynamic/Subset88/names_atac.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_atac  tmp_dynamic/Subset89/expression.tsv.gz tmp_dynamic/Subset89/names_atac0.txt tmp_dynamic/Subset89/names_atac.txt
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  chromatin macs2 --nth 4 tmp_dynamic/Subset91/names_atac.txt data/bams tmp_dynamic/Subset91/reads.bam tmp_dynamic/Subset91/reads.bai tmp_dynamic/Subset91/peaks.bed hs
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  chromatin macs2 --nth 4 tmp_dynamic/Subset88/names_atac.txt data/bams tmp_dynamic/Subset88/reads.bam tmp_dynamic/Subset88/reads.bai tmp_dynamic/Subset88/peaks.bed hs
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  chromatin macs2 --nth 4 tmp_dynamic/Subset89/names_atac.txt data/bams tmp_dynamic/Subset89/reads.bam tmp_dynamic/Subset89/reads.bai tmp_dynamic/Subset89/peaks.bed hs
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset5/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset2/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset9/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset10/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset6/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset8/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset3/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset4/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset7/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset1/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset13/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset11/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset12/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset14/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset15/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset17/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset16/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset18/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset19/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset20/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset21/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset22/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset24/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset23/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset26/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset25/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset28/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset27/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset30/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset29/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset31/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset32/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset34/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset33/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset36/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset35/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset37/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset38/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset39/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset40/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset41/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset42/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset44/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset43/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset45/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset46/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset47/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset48/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset49/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset50/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset51/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset52/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset53/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset54/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset55/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset56/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset58/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset57/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset59/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset60/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset62/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset61/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset63/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset64/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset65/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset66/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset67/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset68/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset69/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset70/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset71/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset72/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset73/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset74/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset75/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset76/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset77/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset78/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset79/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset80/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset81/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset82/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset83/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset84/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset85/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset86/expression0.tsv.gz] Killed
+make: *** [makefiles/common.mk:124: tmp_dynamic/Subset87/expression0.tsv.gz] Killed
+Traceback (most recent call last):
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/dictys/__main__.py", line 13, in <module>
+    docstringrunner(__package__)
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/docstring2argparse/__init__.py", line 340, in docstringrunner
+    run_args(pkgname,funcs,args)
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/docstring2argparse/__init__.py", line 330, in run_args
+    return func(*a,**ka)
+  File "/ocean/projects/cis240075p[bam_sort_core] merging from 16 files and 4 in-memory blocks...
+Traceback (most recent call last):
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/bin/macs2", line 653, in <module>
+    main()
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/bin/macs2", line 49, in main
+    from MACS2.callpeak_cmd import run
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/MACS2/callpeak_cmd.py", line 23, in <module>
+    from MACS2.OptValidator import opt_validate
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/MACS2/OptValidator.py", line 20, in <module>
+    from MACS2.IO.Parser import BEDParser, ELANDResultParser, ELANDMultiParser, \
+  File "__init__.pxd", line 206, in init MACS2.IO.Parser
+ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+
+[bam_sort_core] merging from 16 files and 4 in-memory blocks...
+Traceback (most recent call last):
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/bin/macs2", line 653, in <module>
+    main()
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/bin/macs2", line 49, in main
+    from MACS2.callpeak_cmd import run
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/MACS2/callpeak_cmd.py", line 23, in <module>
+    from MACS2.OptValidator import opt_validate
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/MACS2/OptValidator.py", line 20, in <module>
+    from MACS2.IO.Parser import BEDParser, ELANDResultParser, ELANDMultiParser, \
+  File "__init__.pxd", line 206, in init MACS2.IO.Parser
+ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+
+[bam_sort_core] merging from 16 files and 4 in-memory blocks...
+Traceback (most recent call last):
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/bin/macs2", line 653, in <module>
+    main()
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/bin/macs2", line 49, in main
+    from MACS2.callpeak_cmd import run
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/MACS2/callpeak_cmd.py", line 23, in <module>
+    from MACS2.OptValidator import opt_validate
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/MACS2/OptValidator.py", line 20, in <module>
+    from MACS2.IO.Parser import BEDParser, ELANDResultParser, ELANDMultiParser, \
+  File "__init__.pxd", line 206, in init MACS2.IO.Parser
+ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+
+[bam_sort_core] merging from 16 files and 4 in-memory blocks...
+Traceback (most recent call last):
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/bin/macs2", line 653, in <module>
+    main()
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/bin/macs2", line 49, in main
+    from MACS2.callpeak_cmd import run
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/MACS2/callpeak_cmd.py", line 23, in <module>
+    from MACS2.OptValidator import opt_validate
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/MACS2/OptValidator.py", line 20, in <module>
+    from MACS2.IO.Parser import BEDParser, ELANDResultParser, ELANDMultiParser, \
+  File "__init__.pxd", line 206, in init MACS2.IO.Parser
+ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+
+/asachan/.conda/envs/dictys/lib/python3.9/site-packages/dictys/chromatin.py", line 67, in macs2
+    d2 = shell.cmdfile(cmd,[],infiles={'cellnames.txt': namestxt},quiet=False,cd=True)
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/dictys/utils/shell.py", line 181, in cmdfile
+    raise RuntimeError('Command failed, possibly due to program error: ' + cmda)
+RuntimeError: Command failed, possibly due to program error: /ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/dictys/scripts/chromatin_macs2.sh cellnames.txt /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/data/bams /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset92/reads.bam /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset92/reads.bai /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset92/peaks.bed hs 0.05 4
+make: *** [makefiles/common.mk:138: tmp_dynamic/Subset92/peaks.bed] Error 1
+Traceback (most recent call last):
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/dictys/__main__.py", line 13, in <module>
+    docstringrunner(__package__)
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/docstring2argparse/__init__.py", line 340, in docstringrunner
+    run_args(pkgname,funcs,args)
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/docstring2argparse/__init__.py", line 330, in run_args
+    return func(*a,**ka)
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/dictys/chromatin.py", line 67, in macs2
+    d2 = shell.cmdfile(cmd,[],infiles={'cellnames.txt': namestxt},quiet=False,cd=True)
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/dictys/utils/shell.py", line 181, in cmdfile
+    raise RuntimeError('Command failed, possibly due to program error: ' + cmda)
+RuntimeError: Command failed, possibly due to program error: /ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/dictys/scripts/chromatin_macs2.sh cellnames.txt /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/data/bams /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset90/reads.bam /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset90/reads.bai /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset90/peaks.bed hs 0.05 4
+make: *** [makefiles/common.mk:138: tmp_dynamic/Subset90/peaks.bed] Error 1
+Traceback (most recent call last):
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/dictys/__main__.py", line 13, in <module>
+    docstringrunner(__package__)
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/docstring2argparse/__init__.py", line 340, in docstringrunner
+    run_args(pkgname,funcs,args)
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/docstring2argparse/__init__.py", line 330, in run_args
+    return func(*a,**ka)
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/dictys/chromatin.py", line 67, in macs2
+    d2 = shell.cmdfile(cmd,[],infiles={'cellnames.txt': namestxt},quiet=False,cd=True)
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/dictys/utils/shell.py", line 181, in cmdfile
+    raise RuntimeError('Command failed, possibly due to program error: ' + cmda)
+RuntimeError: Command failed, possibly due to program error: /ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/dictys/scripts/chromatin_macs2.sh cellnames.txt /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/data/bams /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset93/reads.bam /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset93/reads.bai /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset93/peaks.bed hs 0.05 4
+make: *** [makefiles/common.mk:138: tmp_dynamic/Subset93/peaks.bed] Error 1
+Traceback (most recent call last):
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/dictys/__main__.py", line 13, in <module>
+    docstringrunner(__package__)
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/docstring2argparse/__init__.py", line 340, in docstringrunner
+    run_args(pkgname,funcs,args)
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/docstring2argparse/__init__.py", line 330, in run_args
+    return func(*a,**ka)
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/dictys/chromatin.py", line 67, in macs2
+    d2 = shell.cmdfile(cmd,[],infiles={'cellnames.txt': namestxt},quiet=False,cd=True)
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/dictys/utils/shell.py", line 181, in cmdfile
+    raise RuntimeError('Command failed, possibly due to program error: ' + cmda)
+RuntimeError: Command failed, possibly due to program error: /ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/dictys/scripts/chromatin_macs2.sh cellnames.txt /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/data/bams /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset88/reads.bam /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset88/reads.bai /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset88/peaks.bed hs 0.05 4
+make: *** [makefiles/common.mk:138: tmp_dynamic/Subset88/reads.bam] Error 1
+Traceback (most recent call last):
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/dictys/__main__.py", line 13, in <module>
+    docstringrunner(__package__)
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/docstring2argparse/__init__.py", line 340, in docstringrunner
+    run_args(pkgname,funcs,args)
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/docstring2argparse/__init__.py", line 330, in run_args
+    return func(*a,**ka)
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/[bam_sort_core] merging from 16 files and 4 in-memory blocks...
+Traceback (most recent call last):
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/bin/macs2", line 653, in <module>
+    main()
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/bin/macs2", line 49, in main
+    from MACS2.callpeak_cmd import run
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/MACS2/callpeak_cmd.py", line 23, in <module>
+    from MACS2.OptValidator import opt_validate
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/MACS2/OptValidator.py", line 20, in <module>
+    from MACS2.IO.Parser import BEDParser, ELANDResultParser, ELANDMultiParser, \
+  File "__init__.pxd", line 206, in init MACS2.IO.Parser
+ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+
+[bam_sort_core] merging from 16 files and 4 in-memory blocks...
+Traceback (most recent call last):
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/bin/macs2", line 653, in <module>
+    main()
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/bin/macs2", line 49, in main
+    from MACS2.callpeak_cmd import run
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/MACS2/callpeak_cmd.py", line 23, in <module>
+    from MACS2.OptValidator import opt_validate
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/MACS2/OptValidator.py", line 20, in <module>
+    from MACS2.IO.Parser import BEDParser, ELANDResultParser, ELANDMultiParser, \
+  File "__init__.pxd", line 206, in init MACS2.IO.Parser
+ValueError: numpy.dtype size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+
+python3.9/site-packages/dictys/chromatin.py", line 67, in macs2
+    d2 = shell.cmdfile(cmd,[],infiles={'cellnames.txt': namestxt},quiet=False,cd=True)
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/dictys/utils/shell.py", line 181, in cmdfile
+    raise RuntimeError('Command failed, possibly due to program error: ' + cmda)
+RuntimeError: Command failed, possibly due to program error: /ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/dictys/scripts/chromatin_macs2.sh cellnames.txt /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/data/bams /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset89/reads.bam /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset89/reads.bai /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset89/peaks.bed hs 0.05 4
+make: *** [makefiles/common.mk:138: tmp_dynamic/Subset89/reads.bam] Error 1
+Traceback (most recent call last):
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/dictys/__main__.py", line 13, in <module>
+    docstringrunner(__package__)
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/docstring2argparse/__init__.py", line 340, in docstringrunner
+    run_args(pkgname,funcs,args)
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/docstring2argparse/__init__.py", line 330, in run_args
+    return func(*a,**ka)
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/dictys/chromatin.py", line 67, in macs2
+    d2 = shell.cmdfile(cmd,[],infiles={'cellnames.txt': namestxt},quiet=False,cd=True)
+  File "/ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/dictys/utils/shell.py", line 181, in cmdfile
+    raise RuntimeError('Command failed, possibly due to program error: ' + cmda)
+RuntimeError: Command failed, possibly due to program error: /ocean/projects/cis240075p/asachan/.conda/envs/dictys/lib/python3.9/site-packages/dictys/scripts/chromatin_macs2.sh cellnames.txt /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/data/bams /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset91/reads.bam /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset91/reads.bai /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset91/peaks.bed hs 0.05 4
+make: *** [makefiles/common.mk:138: tmp_dynamic/Subset91/reads.bam] Error 1
+make: Target 'cpu' not remade because of errors.
+make: Target 'gpu' not remade because of errors.
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset1/names_rna.txt tmp_dynamic/Subset1/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset2/names_rna.txt tmp_dynamic/Subset2/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset3/names_rna.txt tmp_dynamic/Subset3/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset4/names_rna.txt tmp_dynamic/Subset4/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset5/names_rna.txt tmp_dynamic/Subset5/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset6/names_rna.txt tmp_dynamic/Subset6/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset7/names_rna.txt tmp_dynamic/Subset7/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset8/names_rna.txt tmp_dynamic/Subset8/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset9/names_rna.txt tmp_dynamic/Subset9/expression0.tsv.gz
+OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_MAX_THREADS=1 NUMEXPR_MAX_THREADS=1 MKL_MAX_THREADS=1 python3 -m dictys  preproc selects_rna  data/expression.tsv.gz tmp_dynamic/Subset10/names_rna.txt tmp_dynamic/Subset10/expression0.tsv.gz
+slurmstepd: error: *** JOB 25566091 ON v011 CANCELLED AT 2024-09-06T09:20:20 ***
+slurmstepd: error: Detected 177 oom-kill event(s) in StepId=25566091.batch. Some of your processes may have been killed by the cgroup out-of-memory handler.

@@ -1,0 +1,28 @@
+
+CommandNotFoundError: Your shell has not been properly configured to use 'conda deactivate'.
+To initialize your shell, run
+
+    $ conda init <SHELL_NAME>
+
+Currently supported shells are:
+  - bash
+  - fish
+  - tcsh
+  - xonsh
+  - zsh
+  - powershell
+
+See 'conda init --help' for more information and options.
+
+IMPORTANT: You may need to close and restart your shell after running 'conda init'.
+
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset1/peaks.bed has inconsistent naming convention for record:
+KI270330.1	234	553	04_peak_1	63	.	4.61637	8.36136	6.36608	93
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset1/peaks.bed has inconsistent naming convention for record:
+KI270330.1	234	553	04_peak_1	63	.	4.61637	8.36136	6.36608	93
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 630 jobs to finish...

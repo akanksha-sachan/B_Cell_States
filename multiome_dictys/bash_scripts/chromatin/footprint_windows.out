@@ -1,0 +1,775 @@
+
+CommandNotFoundError: Your shell has not been properly configured to use 'conda deactivate'.
+To initialize your shell, run
+
+    $ conda init <SHELL_NAME>
+
+Currently supported shells are:
+  - bash
+  - fish
+  - tcsh
+  - xonsh
+  - zsh
+  - powershell
+
+See 'conda init --help' for more information and options.
+
+IMPORTANT: You may need to close and restart your shell after running 'conda init'.
+
+
+CommandNotFoundError: Your shell has not been properly configured to use 'conda deactivate'.
+To initialize your shell, run
+
+    $ conda init <SHELL_NAME>
+
+Currently supported shells are:
+  - bash
+  - fish
+  - tcsh
+  - xonsh
+  - zsh
+  - powershell
+
+See 'conda init --help' for more information and options.
+
+IMPORTANT: You may need to close and restart your shell after running 'conda init'.
+
+
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset9/peaks.bed has inconsistent naming convention for record:
+KI270330.1	7	157	04_peak_1	80	.	4.98913	10.0585	8.04498	93
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset9/peaks.bed has inconsistent naming convention for record:
+KI270330.1	7	157	04_peak_1	80	.	4.98913	10.0585	8.04498	93
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset44/peaks.bed has inconsistent naming convention for record:
+KI270330.1	43	658	04_peak_1a	76	.	4.936	9.61638	7.60253	91
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset44/peaks.bed has inconsistent naming convention for record:
+KI270330.1	43	658	04_peak_1a	76	.	4.936	9.61638	7.60253	91
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+Done with footprinting for Subset44
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset5/peaks.bed has inconsistent naming convention for record:
+KI270330.1	234	553	04_peak_1	95	.	5.62342	11.6646	9.59843	94
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset5/peaks.bed has inconsistent naming convention for record:
+KI270330.1	234	553	04_peak_1	95	.	5.62342	11.6646	9.59843	94
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+Done with footprinting for Subset9
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset45/peaks.bed has inconsistent naming convention for record:
+KI270330.1	43	658	04_peak_1a	75	.	4.89556	9.53782	7.52825	91
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset45/peaks.bed has inconsistent naming convention for record:
+KI270330.1	43	658	04_peak_1a	75	.	4.89556	9.53782	7.52825	91
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+Done with footprinting for Subset45
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset46/peaks.bed has inconsistent naming convention for record:
+KI270330.1	49	658	04_peak_1a	89	.	5.26243	10.9534	8.92185	86
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset46/peaks.bed has inconsistent naming convention for record:
+KI270330.1	49	658	04_peak_1a	89	.	5.26243	10.9534	8.92185	86
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+Done with footprinting for Subset5
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset2/peaks.bed has inconsistent naming convention for record:
+KI270330.1	22	561	04_peak_1a	49	.	3.86835	6.91227	4.96896	70
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset2/peaks.bed has inconsistent naming convention for record:
+KI270330.1	22	561	04_peak_1a	49	.	3.86835	6.91227	4.96896	70
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset19/peaks.bed has inconsistent naming convention for record:
+KI270330.1	22	193	04_peak_1	57	.	4.13851	7.72831	5.76746	71
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset19/peaks.bed has inconsistent naming convention for record:
+KI270330.1	22	193	04_peak_1	57	.	4.13851	7.72831	5.76746	71
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+Done with footprinting for Subset19
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset18/peaks.bed has inconsistent naming convention for record:
+KI270330.1	7	193	04_peak_1	105	.	5.53052	12.6126	10.5502	81
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset18/peaks.bed has inconsistent naming convention for record:
+KI270330.1	7	193	04_peak_1	105	.	5.53052	12.6126	10.5502	81
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+Done with footprinting for Subset18
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset10/peaks.bed has inconsistent naming convention for record:
+KI270330.1	7	157	04_peak_1	75	.	4.74452	9.56632	7.57513	86
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset10/peaks.bed has inconsistent naming convention for record:
+KI270330.1	7	157	04_peak_1	75	.	4.74452	9.56632	7.57513	86
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+Done with footprinting for Subset10
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset47/peaks.bed has inconsistent naming convention for record:
+KI270330.1	49	571	04_peak_1a	86	.	5.14438	10.716	8.69606	86
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset47/peaks.bed has inconsistent naming convention for record:
+KI270330.1	49	571	04_peak_1a	86	.	5.14438	10.716	8.69606	86
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+Done with footprinting for Subset47
+Done with footprinting for Subset46
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset17/peaks.bed has inconsistent naming convention for record:
+KI270330.1	7	193	04_peak_1	74	.	4.68251	9.43973	7.44072	83
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset17/peaks.bed has inconsistent naming convention for record:
+KI270330.1	7	193	04_peak_1	74	.	4.68251	9.43973	7.44072	83
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+Done with footprinting for Subset2
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset48/peaks.bed has inconsistent naming convention for record:
+KI270330.1	41	571	04_peak_1a	85	.	5.05913	10.543	8.53129	88
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset48/peaks.bed has inconsistent naming convention for record:
+KI270330.1	41	571	04_peak_1a	85	.	5.05913	10.543	8.53129	88
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+Done with footprinting for Subset48
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset7/peaks.bed has inconsistent naming convention for record:
+KI270330.1	5	155	04_peak_1	37	.	3.61689	5.68443	3.78209	78
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset7/peaks.bed has inconsistent naming convention for record:
+KI270330.1	5	155	04_peak_1	37	.	3.61689	5.68443	3.78209	78
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset16/peaks.bed has inconsistent naming convention for record:
+KI270330.1	7	531	04_peak_1a	51	.	3.95565	7.08696	5.15212	88
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset16/peaks.bed has inconsistent naming convention for record:
+KI270330.1	7	531	04_peak_1a	51	.	3.95565	7.08696	5.15212	88
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+Done with footprinting for Subset16
+Done with footprinting for Subset17
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset49/peaks.bed has inconsistent naming convention for record:
+KI270330.1	41	577	04_peak_1a	84	.	5.0046	10.4316	8.42539	85
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset49/peaks.bed has inconsistent naming convention for record:
+KI270330.1	41	577	04_peak_1a	84	.	5.0046	10.4316	8.42539	85
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+Done with footprinting for Subset49
+Done with footprinting for Subset7
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset15/peaks.bed has inconsistent naming convention for record:
+KI270330.1	5	642	04_peak_1a	80	.	4.80063	10.0099	8.0106	79
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset15/peaks.bed has inconsistent naming convention for record:
+KI270330.1	5	642	04_peak_1a	80	.	4.80063	10.0099	8.0106	79
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+Done with footprinting for Subset15
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset14/peaks.bed has inconsistent naming convention for record:
+KI270330.1	5	642	04_peak_1a	79	.	4.77846	9.96358	7.96905	79
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset14/peaks.bed has inconsistent naming convention for record:
+KI270330.1	5	642	04_peak_1a	79	.	4.77846	9.96358	7.96905	79
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+Done with footprinting for Subset14
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset54/peaks.bed has inconsistent naming convention for record:
+KI270330.1	0	157	04_peak_1	85	.	4.91204	10.5795	8.58816	77
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset54/peaks.bed has inconsistent naming convention for record:
+KI270330.1	0	157	04_peak_1	85	.	4.91204	10.5795	8.58816	77
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset8/peaks.bed has inconsistent naming convention for record:
+KI270330.1	7	157	04_peak_1	75	.	4.88888	9.52482	7.5151	93
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset8/peaks.bed has inconsistent naming convention for record:
+KI270330.1	7	157	04_peak_1	75	.	4.88888	9.52482	7.5151	93
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset52/peaks.bed has inconsistent naming convention for record:
+KI270330.1	3	193	04_peak_1	96	.	5.27619	11.7029	9.6822	88
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset52/peaks.bed has inconsistent naming convention for record:
+KI270330.1	3	193	04_peak_1	96	.	5.27619	11.7029	9.6822	88
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+Done with footprinting for Subset8
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset11/peaks.bed has inconsistent naming convention for record:
+KI270330.1	5	157	04_peak_1	57	.	4.12623	7.70343	5.76418	80
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset11/peaks.bed has inconsistent naming convention for record:
+KI270330.1	5	157	04_peak_1	57	.	4.12623	7.70343	5.76418	80
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset53/peaks.bed has inconsistent naming convention for record:
+KI270330.1	0	157	04_peak_1	87	.	4.99033	10.7455	8.74676	77
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset53/peaks.bed has inconsistent naming convention for record:
+KI270330.1	0	157	04_peak_1	87	.	4.99033	10.7455	8.74676	77
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset55/peaks.bed has inconsistent naming convention for record:
+KI270330.1	0	155	04_peak_1	92	.	5.04697	11.2127	9.21229	71
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset55/peaks.bed has inconsistent naming convention for record:
+KI270330.1	0	155	04_peak_1	92	.	5.04697	11.2127	9.21229	71
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+Done with footprinting for Subset55
+Done with footprinting for Subset54
+Done with footprinting for Subset53
+Done with footprinting for Subset52
+Done with footprinting for Subset11
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset12/peaks.bed has inconsistent naming convention for record:
+KI270330.1	0	642	04_peak_1a	103	.	5.41564	12.3674	10.3313	85
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset12/peaks.bed has inconsistent naming convention for record:
+KI270330.1	0	642	04_peak_1a	103	.	5.41564	12.3674	10.3313	85
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset57/peaks.bed has inconsistent naming convention for record:
+KI270330.1	0	157	04_peak_1	124	.	5.88074	14.5457	12.489	75
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset57/peaks.bed has inconsistent naming convention for record:
+KI270330.1	0	157	04_peak_1	124	.	5.88074	14.5457	12.489	75
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset51/peaks.bed has inconsistent naming convention for record:
+KI270330.1	3	191	04_peak_1	114	.	5.78709	13.5452	11.4892	86
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset51/peaks.bed has inconsistent naming convention for record:
+KI270330.1	3	191	04_peak_1	114	.	5.78709	13.5452	11.4892	86
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+Done with footprinting for Subset12
+Done with footprinting for Subset57
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset3/peaks.bed has inconsistent naming convention for record:
+KI270330.1	7	170	04_peak_1	106	.	5.38449	12.6713	10.6493	75
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset3/peaks.bed has inconsistent naming convention for record:
+KI270330.1	7	170	04_peak_1	106	.	5.38449	12.6713	10.6493	75
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+Done with footprinting for Subset51
+Done with footprinting for Subset3
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset13/peaks.bed has inconsistent naming convention for record:
+KI270330.1	0	553	04_peak_1a	118	.	5.78979	13.9462	11.8861	85
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset13/peaks.bed has inconsistent naming convention for record:
+KI270330.1	0	553	04_peak_1a	118	.	5.78979	13.9462	11.8861	85
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset50/peaks.bed has inconsistent naming convention for record:
+KI270330.1	16	577	04_peak_1a	82	.	4.90738	10.2317	8.23505	103
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset50/peaks.bed has inconsistent naming convention for record:
+KI270330.1	16	577	04_peak_1a	82	.	4.90738	10.2317	8.23505	103
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset56/peaks.bed has inconsistent naming convention for record:
+KI270330.1	0	157	04_peak_1	117	.	5.71549	13.7832	11.7368	77
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset56/peaks.bed has inconsistent naming convention for record:
+KI270330.1	0	157	04_peak_1	117	.	5.71549	13.7832	11.7368	77
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+Done with footprinting for Subset13
+Done with footprinting for Subset56
+Done with footprinting for Subset50
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset4/peaks.bed has inconsistent naming convention for record:
+KI270330.1	0	183	04_peak_1	193	.	7.37085	21.5098	19.3591	72
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset4/peaks.bed has inconsistent naming convention for record:
+KI270330.1	0	183	04_peak_1	193	.	7.37085	21.5098	19.3591	72
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+Done with footprinting for Subset4
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset61/peaks.bed has inconsistent naming convention for record:
+KI270330.1	7	165	04_peak_1	99	.	5.2428	11.9934	9.97656	77
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset61/peaks.bed has inconsistent naming convention for record:
+KI270330.1	7	165	04_peak_1	99	.	5.2428	11.9934	9.97656	77
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+Done with footprinting for Subset61
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset60/peaks.bed has inconsistent naming convention for record:
+KI270330.1	7	165	04_peak_1	99	.	5.21484	11.9323	9.91896	78
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset60/peaks.bed has inconsistent naming convention for record:
+KI270330.1	7	165	04_peak_1	99	.	5.21484	11.9323	9.91896	78
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+Done with footprinting for Subset60
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset59/peaks.bed has inconsistent naming convention for record:
+KI270330.1	7	157	04_peak_1	83	.	4.78947	10.317	8.3349	74
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset59/peaks.bed has inconsistent naming convention for record:
+KI270330.1	7	157	04_peak_1	83	.	4.78947	10.317	8.3349	74
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset58/peaks.bed has inconsistent naming convention for record:
+KI270330.1	0	157	04_peak_1	124	.	5.87317	14.5288	12.4727	75
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset58/peaks.bed has inconsistent naming convention for record:
+KI270330.1	0	157	04_peak_1	124	.	5.87317	14.5288	12.4727	75
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+Done with footprinting for Subset58
+Done with footprinting for Subset59
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset65/peaks.bed has inconsistent naming convention for record:
+KI270330.1	15	174	04_peak_1	110	.	5.55211	13.0391	11.002	73
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset65/peaks.bed has inconsistent naming convention for record:
+KI270330.1	15	174	04_peak_1	110	.	5.55211	13.0391	11.002	73
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset64/peaks.bed has inconsistent naming convention for record:
+KI270330.1	15	174	04_peak_1	126	.	5.97603	14.7567	12.6931	74
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset64/peaks.bed has inconsistent naming convention for record:
+KI270330.1	15	174	04_peak_1	126	.	5.97603	14.7567	12.6931	74
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+Done with footprinting for Subset64
+Done with footprinting for Subset65
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset63/peaks.bed has inconsistent naming convention for record:
+KI270330.1	15	174	04_peak_1	107	.	5.45186	12.8198	10.7889	74
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset63/peaks.bed has inconsistent naming convention for record:
+KI270330.1	15	174	04_peak_1	107	.	5.45186	12.8198	10.7889	74
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+Done with footprinting for Subset63
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset62/peaks.bed has inconsistent naming convention for record:
+KI270330.1	15	165	04_peak_1	91	.	5.03283	11.1821	9.17956	71
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset62/peaks.bed has inconsistent naming convention for record:
+KI270330.1	15	165	04_peak_1	91	.	5.03283	11.1821	9.17956	71
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+Done with footprinting for Subset62
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset68/peaks.bed has inconsistent naming convention for record:
+KI270330.1	234	553	04_peak_1	81	.	5.25619	10.229	8.18404	94
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset68/peaks.bed has inconsistent naming convention for record:
+KI270330.1	234	553	04_peak_1	81	.	5.25619	10.229	8.18404	94
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset69/peaks.bed has inconsistent naming convention for record:
+KI270330.1	234	586	04_peak_1	99	.	5.81433	12.0324	9.95111	97
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset69/peaks.bed has inconsistent naming convention for record:
+KI270330.1	234	586	04_peak_1	99	.	5.81433	12.0324	9.95111	97
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+Done with footprinting for Subset68
+Done with footprinting for Subset69
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset66/peaks.bed has inconsistent naming convention for record:
+KI270330.1	15	170	04_peak_1	93	.	5.10128	11.3299	9.32502	72
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset66/peaks.bed has inconsistent naming convention for record:
+KI270330.1	15	170	04_peak_1	93	.	5.10128	11.3299	9.32502	72
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset67/peaks.bed has inconsistent naming convention for record:
+KI270330.1	10	170	04_peak_1	83	.	4.8205	10.3838	8.39997	72
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset67/peaks.bed has inconsistent naming convention for record:
+KI270330.1	10	170	04_peak_1	83	.	4.8205	10.3838	8.39997	72
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+Done with footprinting for Subset67
+Done with footprinting for Subset66
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset75/peaks.bed has inconsistent naming convention for record:
+KI270330.1	272	574	04_peak_1	87	.	5.16239	10.7524	8.73332	146
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset75/peaks.bed has inconsistent naming convention for record:
+KI270330.1	272	574	04_peak_1	87	.	5.16239	10.7524	8.73332	146
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+Done with footprinting for Subset75
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset70/peaks.bed has inconsistent naming convention for record:
+KI270330.1	287	553	04_peak_1	29	.	3.39524	4.8421	2.95374	67
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset70/peaks.bed has inconsistent naming convention for record:
+KI270330.1	287	553	04_peak_1	29	.	3.39524	4.8421	2.95374	67
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+Done with footprinting for Subset70
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset76/peaks.bed has inconsistent naming convention for record:
+KI270330.1	262	574	04_peak_1	103	.	5.58968	12.3566	10.3084	157
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset76/peaks.bed has inconsistent naming convention for record:
+KI270330.1	262	574	04_peak_1	103	.	5.58968	12.3566	10.3084	157
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+Done with footprinting for Subset76
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset71/peaks.bed has inconsistent naming convention for record:
+KI270330.1	272	574	04_peak_1a	42	.	3.88034	6.16307	4.23117	74
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset71/peaks.bed has inconsistent naming convention for record:
+KI270330.1	272	574	04_peak_1a	42	.	3.88034	6.16307	4.23117	74
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+Done with footprinting for Subset71
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset77/peaks.bed has inconsistent naming convention for record:
+KI270330.1	1	151	04_peak_1	73	.	4.60103	9.2722	7.30527	74
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset77/peaks.bed has inconsistent naming convention for record:
+KI270330.1	1	151	04_peak_1	73	.	4.60103	9.2722	7.30527	74
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+Done with footprinting for Subset77
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset72/peaks.bed has inconsistent naming convention for record:
+KI270330.1	2	152	04_peak_1	71	.	4.84843	9.11729	7.10903	78
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset72/peaks.bed has inconsistent naming convention for record:
+KI270330.1	2	152	04_peak_1	71	.	4.84843	9.11729	7.10903	78
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+Done with footprinting for Subset72
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset78/peaks.bed has inconsistent naming convention for record:
+KI270330.1	2	152	04_peak_1	84	.	4.84205	10.43	8.44744	75
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset78/peaks.bed has inconsistent naming convention for record:
+KI270330.1	2	152	04_peak_1	84	.	4.84205	10.43	8.44744	75
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+Done with footprinting for Subset78
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset79/peaks.bed has inconsistent naming convention for record:
+KI270330.1	2	152	04_peak_1	83	.	4.7902	10.3186	8.34112	75
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset79/peaks.bed has inconsistent naming convention for record:
+KI270330.1	2	152	04_peak_1	83	.	4.7902	10.3186	8.34112	75
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+Done with footprinting for Subset79
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset74/peaks.bed has inconsistent naming convention for record:
+KI270330.1	272	574	04_peak_1	74	.	4.82932	9.40854	7.41083	98
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset74/peaks.bed has inconsistent naming convention for record:
+KI270330.1	272	574	04_peak_1	74	.	4.82932	9.40854	7.41083	98
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+Done with footprinting for Subset74
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset73/peaks.bed has inconsistent naming convention for record:
+KI270330.1	2	169	04_peak_1	76	.	4.94663	9.63699	7.62652	83
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset73/peaks.bed has inconsistent naming convention for record:
+KI270330.1	2	169	04_peak_1	76	.	4.94663	9.63699	7.62652	83
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+Done with footprinting for Subset73
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset80/peaks.bed has inconsistent naming convention for record:
+KI270330.1	253	577	04_peak_1	129	.	5.90848	15.0113	12.9529	141
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset80/peaks.bed has inconsistent naming convention for record:
+KI270330.1	253	577	04_peak_1	129	.	5.90848	15.0113	12.9529	141
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+Done with footprinting for Subset80
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset93/peaks.bed has inconsistent naming convention for record:
+KI270330.1	0	182	04_peak_1	136	.	6.03034	15.6985	13.6297	69
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset93/peaks.bed has inconsistent naming convention for record:
+KI270330.1	0	182	04_peak_1	136	.	6.03034	15.6985	13.6297	69
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset81/peaks.bed has inconsistent naming convention for record:
+KI270330.1	253	577	04_peak_1	103	.	5.22493	12.3155	10.3067	163
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset81/peaks.bed has inconsistent naming convention for record:
+KI270330.1	253	577	04_peak_1	103	.	5.22493	12.3155	10.3067	163
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+Done with footprinting for Subset93
+Done with footprinting for Subset81
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset88/peaks.bed has inconsistent naming convention for record:
+KI270310.1	807	957	04_peak_1	24	.	2.86074	4.2387	2.47092	71
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset88/peaks.bed has inconsistent naming convention for record:
+KI270310.1	807	957	04_peak_1	24	.	2.86074	4.2387	2.47092	71
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset89/peaks.bed has inconsistent naming convention for record:
+KI270310.1	807	957	04_peak_1	24	.	2.8611	4.23943	2.47015	71
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset89/peaks.bed has inconsistent naming convention for record:
+KI270310.1	807	957	04_peak_1	24	.	2.8611	4.23943	2.47015	71
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+Done with footprinting for Subset88
+Done with footprinting for Subset89
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset92/peaks.bed has inconsistent naming convention for record:
+KI270330.1	0	182	04_peak_1	117	.	5.55846	13.8181	11.7818	68
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset92/peaks.bed has inconsistent naming convention for record:
+KI270330.1	0	182	04_peak_1	117	.	5.55846	13.8181	11.7818	68
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset90/peaks.bed has inconsistent naming convention for record:
+KI270310.1	807	957	04_peak_1	36	.	3.26192	5.43914	3.61271	84
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset90/peaks.bed has inconsistent naming convention for record:
+KI270310.1	807	957	04_peak_1	36	.	3.26192	5.43914	3.61271	84
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+Done with footprinting for Subset90
+Done with footprinting for Subset92
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset91/peaks.bed has inconsistent naming convention for record:
+KI270330.1	0	668	04_peak_1a	125	.	5.71011	14.556	12.5105	78
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset91/peaks.bed has inconsistent naming convention for record:
+KI270330.1	0	668	04_peak_1a	125	.	5.71011	14.556	12.5105	78
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+Done with footprinting for Subset91
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset87/peaks.bed has inconsistent naming convention for record:
+KI270310.1	807	957	04_peak_1	24	.	2.85044	4.21819	2.45326	71
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset87/peaks.bed has inconsistent naming convention for record:
+KI270310.1	807	957	04_peak_1	24	.	2.85044	4.21819	2.45326	71
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+Done with footprinting for Subset87
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset86/peaks.bed has inconsistent naming convention for record:
+KI270330.1	0	660	04_peak_1a	84	.	4.66387	10.368	8.40294	83
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset86/peaks.bed has inconsistent naming convention for record:
+KI270330.1	0	660	04_peak_1a	84	.	4.66387	10.368	8.40294	83
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+Done with footprinting for Subset86
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset85/peaks.bed has inconsistent naming convention for record:
+KI270330.1	1	151	04_peak_1	76	.	4.45121	9.57514	7.62916	78
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset85/peaks.bed has inconsistent naming convention for record:
+KI270330.1	1	151	04_peak_1	76	.	4.45121	9.57514	7.62916	78
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+Done with footprinting for Subset85
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset82/peaks.bed has inconsistent naming convention for record:
+KI270330.1	0	169	04_peak_1	99	.	5.04151	11.8995	9.90728	83
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset82/peaks.bed has inconsistent naming convention for record:
+KI270330.1	0	169	04_peak_1	99	.	5.04151	11.8995	9.90728	83
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+Done with footprinting for Subset82
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset84/peaks.bed has inconsistent naming convention for record:
+KI270330.1	0	151	04_peak_1	83	.	4.65067	10.3383	8.37549	77
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset84/peaks.bed has inconsistent naming convention for record:
+KI270330.1	0	151	04_peak_1	83	.	4.65067	10.3383	8.37549	77
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+Done with footprinting for Subset84
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset83/peaks.bed has inconsistent naming convention for record:
+KI270330.1	0	151	04_peak_1	90	.	4.81908	11.0488	9.07389	78
+
+***** WARNING: File /ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/tmp_dynamic/Subset83/peaks.bed has inconsistent naming convention for record:
+KI270330.1	0	151	04_peak_1	90	.	4.81908	11.0488	9.07389	78
+
+Reading BED File...
+Calculating footprints...
+Waiting for the last 290 jobs to finish...
+
+Done with footprinting for Subset83
