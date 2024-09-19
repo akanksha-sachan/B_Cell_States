@@ -39,7 +39,7 @@ def configure_branch_tfs(branch_name, tf_subnet, tf_annotations, target_annotati
     }
     return config
 
-def generate_and_save_animation(data, branch, config, vrange, nframe=100, fps=0.10, dpi=100, output_path='animation.mp4'):
+def generate_and_save_animation(data, branch, config, nframe=100, fps=0.10, dpi=100, output_path='animation.mp4'):
     """
     Generate the dynamic network animation and save it to a file.
 
@@ -47,7 +47,6 @@ def generate_and_save_animation(data, branch, config, vrange, nframe=100, fps=0.
         data: Loaded dynamic network data.
         branch (tuple): Start and end nodes defining the branch.
         config (dict): Configuration dictionary with TFs and target genes.
-        vrange (dict): Value range for coloring in visualizations.
         nframe (int): Number of frames for the animation (default: 100).
         fps (float): Frames per second for the animation (default: 0.10).
         dpi (int): DPI for the animation (default: 100).
@@ -64,21 +63,22 @@ def generate_and_save_animation(data, branch, config, vrange, nframe=100, fps=0.
         bcde_tfs=config['tfs_ann'],
         e_targets=config['target_ann'],
         f_tfs=config['tfs_subnet'],
+        # legend loc for cell type name
         a_ka={'scatterka': {'legend_loc': (0.6, 1)}},
         # Use the value range for coloring
-        e_ka={'lim': vrange.get('Switching time', [-0.02, 0.02])},  # Example for 'Switching time'
+        e_ka={'lim':[-0.02,0.02]},
     )
     
     ca = panel.animate_generic(pts, fig, panels)
     anim = ca.animate(**animate_ka)
 
     # Save the animation
-    writer = matplotlib.animation.writers['ffmpeg_file'](fps=fps * nframe, codec='mpeg4')
+    writer = matplotlib.animation.writers['ffmpeg_file'](fps=fps * nframe, codec='h264')
     writer.frame_format = 'jpeg'
     anim.save(output_path, writer=writer, dpi='figure')
 
     print(f'Animation saved to {output_path}')
-
+ 
 
 # Example usage of the functions
 if __name__ == '__main__':
@@ -88,12 +88,6 @@ if __name__ == '__main__':
     branches = {
         'Plasma-Blast': (2, 1),
         'Germinal-Center': (2, 3)
-    }
-    # Define value ranges for coloring
-    vrange = {
-        'Terminal logFC': [-4.5, 4.5],
-        'Transient logFC': [-1.5, 1.5],
-        'Switching time': [0.001, 0.01],
     }
     data = load_data(data_file)
 
@@ -109,5 +103,5 @@ if __name__ == '__main__':
     branch_gc = branches[branch_names[1]]
     output_path_pb = f'/ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/output/animation-{branch_names[0]}.mp4'
     output_path_gc = f'/ocean/projects/cis240075p/asachan/datasets/B_Cell/multiome_1st_donor_UPMC_aggr/dictys_outs/output/animation-{branch_names[1]}.mp4'
-    generate_and_save_animation(data, branch_pb, config, vrange, nframe=100, fps=0.10, dpi=100, output_path=output_path_pb)
-    generate_and_save_animation(data, branch_gc, config, vrange, nframe=100, fps=0.10, dpi=100, output_path=output_path_gc)
+    generate_and_save_animation(data, branch_pb, config, nframe=100, fps=0.10, dpi=100, output_path=output_path_pb)
+    generate_and_save_animation(data, branch_gc, config, nframe=100, fps=0.10, dpi=100, output_path=output_path_gc)
